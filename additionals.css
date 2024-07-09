@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+
+.block {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1rem;
+}
+.circle {
+    background: #0082CB;
+    border-radius: 90px;
+    color: white;
+    height: 85px;
+    font-weight: bold;
+    width: 85px;
+    display: table;
+}
+.circle p {
+    vertical-align: middle;
+    display: table-cell;
+}
+.line-truncate-2 {
+    overflow: hidden;
+    max-width: 400px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.line-truncate-3 {
+    overflow: hidden;
+    max-width: 400px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {    
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%; 
+    background:
+      radial-gradient(var(--r1) var(--r2) at top   ,#FE8926 79.5%,#DE5D00 80%),
+      radial-gradient(var(--r1) var(--r2) at bottom,#DE5D00 79.5%,#FE8926 80%),
+      radial-gradient(var(--r1) var(--r2) at top   ,#FE8926 79.5%,#DE5D00 80%),
+      #ccc;
+    background-size: 50.5% 220%;
+    background-position: -100% 0%,0% 0%,100% 0%;
+    background-repeat:no-repeat;
+    animation: l9 1s infinite linear;
+  }
+  @keyframes l9 {
+      33%  {background-position:    0% 33% ,100% 33% ,200% 33% }
+      66%  {background-position: -100%  66%,0%   66% ,100% 66% }
+      100% {background-position:    0% 100%,100% 100%,200% 100%}
+}
